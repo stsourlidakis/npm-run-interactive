@@ -1,0 +1,24 @@
+{
+	"name": "npm-run-interactive",
+	"version": "1.0.0",
+	"description": "Run your npm scripts with the help of an interactive dialog",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/stsourlidakis/npm-run-interactive.git"
+	},
+	"keywords": [
+		"npm",
+		"script",
+		"cli",
+		"interactive"
+	],
+	"author": "Stavros Tsourlidakis <s.tsourlidakis@hotmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/stsourlidakis/npm-run-interactive/issues"
+	},
+	"homepage": "https://github.com/stsourlidakis/npm-run-interactive#readme"
+}
