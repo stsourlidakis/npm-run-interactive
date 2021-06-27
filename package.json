@@ -2,6 +2,10 @@
 	"name": "npm-run-interactive",
 	"version": "1.0.0",
 	"description": "Run your npm scripts with the help of an interactive dialog",
+	"bin": {
+		"nri": "src/cli.js"
+	},
+	"preferGlobal": true,
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -26,5 +30,9 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^3.4.0",
 		"prettier": "^2.3.1"
+	},
+	"dependencies": {
+		"enquirer": "^2.3.6",
+		"has-yarn": "^2.1.0"
 	}
 }
