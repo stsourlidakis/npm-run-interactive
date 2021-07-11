@@ -21,6 +21,11 @@ const spawn = util.promisify(require('child_process').spawn);
 		process.exit(1);
 	}
 
+	if (!process.stdout.isTTY) {
+		console.log(JSON.stringify(scripts, null, 2));
+		return;
+	}
+
 	const scriptChoices = Object.entries(scripts).map(([script, command]) => ({
 		name: script,
 		value: script,
