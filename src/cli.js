@@ -5,8 +5,12 @@ const util = require('util');
 const { prompt } = require('enquirer');
 const hasYarn = require('has-yarn');
 const spawn = util.promisify(require('child_process').spawn);
+const updateNotifier = require('update-notifier');
+const pkg = require('../package.json');
 
 (async function main() {
+	updateNotifier({ pkg }).notify();
+
 	const packagePath = `${process.cwd()}/package.json`;
 
 	if (!fs.existsSync(packagePath)) {

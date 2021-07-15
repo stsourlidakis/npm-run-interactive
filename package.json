@@ -33,6 +33,7 @@
 	},
 	"dependencies": {
 		"enquirer": "^2.3.6",
-		"has-yarn": "^2.1.0"
+		"has-yarn": "^2.1.0",
+		"update-notifier": "^5.1.0"
 	}
 }
