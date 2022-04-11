@@ -11,6 +11,11 @@ const pkg = require('../package.json');
 (async function main() {
 	updateNotifier({ pkg }).notify();
 
+	if (['-v', '--version'].includes(process.argv[2])) {
+		console.log(pkg.version);
+		return;
+	}
+
 	const packagePath = `${process.cwd()}/package.json`;
 
 	if (!fs.existsSync(packagePath)) {
