@@ -9,7 +9,7 @@ const updateNotifier = require('update-notifier');
 const pkg = require('../package.json');
 
 (async function main() {
-	updateNotifier({ pkg }).notify();
+	updateNotifier({ pkg }).notify({ isGlobal: true });
 
 	if (['-v', '--version'].includes(process.argv[2])) {
 		console.log(pkg.version);
